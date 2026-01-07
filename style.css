@@ -1,0 +1,194 @@
+/* ========= palette (eyedropper from your image) =========
+nav-bg: #dfe8ef;
+hero-left-bg: #e6eef4;
+hero-right-bg: #bfc8d1;
+accent-blue: #405b78;
+muted-text: #4a5a68;
+card-bg: #e9eef2;
+light-section: #f6f8fa;
+footer-bg: #d7e0e7
+======================================================= */
+
+:root{
+  --nav-bg: #dfe8ef;
+  --hero-left: #e6eef4;
+  --hero-right: #bfc8d1;
+  --accent: #405b78;
+  --muted: #4a5a68;
+  --card: #e9eef2;
+  --light: #f6f8fa;
+  --footer: #d7e0e7;
+  --container-w: 1100px;
+  --radius-lg: 28px;
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:'Poppins',system-ui,Arial,sans-serif;color:var(--muted);background:#fff}
+
+/* container */
+.container{width:90%;max-width:var(--container-w);margin:0 auto}
+
+/* NAVBAR */
+.navbar{background:var(--nav-bg);border-bottom:1px solid rgba(63,84,104,0.05)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-weight:700;color:var(--accent);font-size:20px}
+.nav-links{display:flex;align-items:center;gap:18px}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px}
+.nav-links a.ghost{border:1px solid rgba(64,91,120,0.12);padding:8px 12px;border-radius:6px;background:transparent}
+.nav-links a.btn-login{background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+
+/* HERO */
+.hero{
+  background:linear-gradient(90deg, var(--hero-left) 50%, transparent 50%);
+  padding:48px 0 40px 0
+}
+.hero-inner{display:flex;gap:40px;align-items:center}
+.hero-left{flex:1;padding:24px}
+.pre{font-size:14px;color:var(--muted);margin-bottom:12px}
+.hero-title{font-size:44px;line-height:1.02;color:#0f2230;font-weight:700;margin-bottom:18px;letter-spacing:0.2px}
+.hero-desc{max-width:520px;color:rgba(11,24,33,0.6);margin-bottom:20px}
+.btn-primary{
+  display:inline-block;background:#fff;color:var(--accent);
+  border-radius:8px;padding:10px 18px;
+  border:1px solid rgba(15,34,48,0.08);
+  text-decoration:none;font-weight:600
+}
+
+/* hero-right */
+.hero-right{flex:1;display:flex;justify-content:flex-end;padding-right:30px}
+.hero-image{
+  width:420px;height:320px;background:var(--hero-right);
+  border-top-right-radius:60px;
+  border-bottom-left-radius:60px;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+
+/* HERO IMAGE */
+.hero-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* SECTION generic */
+.section{padding:56px 0;background:var(--light)}
+.section-title{color:var(--accent);text-align:center;font-size:28px;margin-bottom:8px}
+.section-sub{color:rgba(64,91,120,0.6);text-align:center;margin-bottom:30px;max-width:760px;margin-left:auto;margin-right:auto;font-size:14px}
+
+/* FITUR GRID */
+.f-grid{display:flex;justify-content:space-between;gap:30px;margin-top:28px;padding:0 40px}
+.f-item{text-align:center;flex:1;max-width:320px}
+.f-icon{
+  width:96px;height:96px;border-radius:18px;background:var(--card);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 16px;
+  box-shadow:0 6px 18px rgba(65,91,120,0.03);
+  overflow:hidden;
+}
+
+/* FITUR ICON IMAGES */
+.f-icon img{
+  width:60%;
+  height:60%;
+  object-fit:contain;
+}
+
+/* TENTANG */
+.section-tentang{background:transparent;padding:72px 0}
+.tentang-inner{display:flex;gap:40px;align-items:center;justify-content:space-between;padding-bottom:30px}
+.tentang-left{flex:1}
+.tentang-right{flex:1;display:flex;justify-content:center}
+.about-art{
+  width:260px;height:160px;background:var(--card);
+  border-radius:28px;display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+
+/* TENTANG IMAGE */
+.about-art img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+}
+
+/* CARDS ROW */
+.cards-row{display:flex;gap:24px;justify-content:space-between;padding-top:24px;padding-bottom:12px}
+.card{
+  flex:1;background:var(--card);
+  border-radius:12px;padding:24px;text-align:center;min-height:180px;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-end
+}
+
+/* CARD IMAGE */
+.card-img{
+  width:120px;
+  height:120px;
+  border-radius:12px;
+  margin-bottom:12px;
+  object-fit:cover;
+}
+
+/* CARD NAME */
+.card-name{
+  background:rgba(255,255,255,0.85);
+  padding:8px 12px;border-radius:6px;font-weight:600;color:var(--muted)
+}
+
+/* HUBUNGI */
+.section-hubungi{background:#fff;padding:56px 0}
+.contact-grid{display:flex;gap:24px;justify-content:center;margin-top:18px}
+.contact-item{display:flex;gap:14px;align-items:flex-start;max-width:360px}
+.c-icon{width:44px;height:44px;border-radius:10px;background:var(--card);display:flex;align-items:center;justify-content:center;font-size:18px}
+.c-info h4{color:var(--accent);margin-bottom:6px;font-size:15px}
+
+/* TESTIMONI */
+.section-testimoni{background:#f1f4f7;padding:56px 0}
+.testi-row{display:flex;gap:20px;justify-content:center;margin-top:22px}
+.testi-card{
+  width:280px;background:#fff;padding:18px;
+  border-radius:10px;box-shadow:0 8px 20px rgba(15,34,48,0.04);
+  text-align:left
+}
+
+/* AVATAR IMAGE */
+.avatar{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:8px;
+}
+
+.stars{color:var(--accent);font-weight:700;margin-bottom:8px}
+.quote{font-size:14px;color:rgba(15,34,48,0.8);margin-bottom:8px}
+.who{font-size:12px;color:rgba(64,91,120,0.6)}
+
+/* FOOTER */
+.footer{background:var(--footer);padding:34px 0;border-top:1px solid rgba(15,34,48,0.03)}
+.footer-inner{display:flex;flex-direction:column;align-items:center;gap:18px}
+.footer-top{display:flex;justify-content:space-between;align-items:center;width:90%;max-width:var(--container-w);padding-bottom:6px;border-bottom:1px solid rgba(15,34,48,0.04)}
+.footer .logo{color:var(--accent)}
+.social{color:var(--muted)}
+copyright{font-size:13px;color:var(--muted)}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column;align-items:flex-start}
+  .hero-right{width:100%;display:flex;justify-content:center;padding:24px 0}
+  .hero-image{width:320px;height:220px}
+  .f-grid{flex-direction:column;align-items:center}
+  .tentang-inner{flex-direction:column-reverse;gap:18px}
+  .cards-row{flex-direction:row;overflow:auto;padding:10px 0}
+  .nav-links{display:none}
+  .container{width:94%}
+}
+
+@media (max-width:480px){
+  .hero-title{font-size:28px}
+  .hero-desc{font-size:14px}
+  .testi-row{flex-direction:column;align-items:center}
+  .card{min-width:200px}
+}
