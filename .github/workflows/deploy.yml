@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Deploy Main Website to server via SSH
-      uses: appleboy/ssh-action@v1.0.3
-      with:
-        host: ${{ secrets.IP_SERVER }}
-        username: ${{ secrets.USER_SERVER }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: 777
-        script: |
-          cd /var/www/main
-          git pull origin main
-          sudo systemctl reload nginx
+      - name: Deploy Main Website to server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.IP_SERVER }}
+          username: ${{ secrets.USER_SERVER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 777
+          script: |
+            cd /var/www/main
+            git pull origin website3
+            sudo systemctl reload nginx
