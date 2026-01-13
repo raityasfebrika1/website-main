@@ -39,7 +39,7 @@ $anggota = [
 <body>
 
     <h1>Kelompok 5</h1>
-    <p class="welcome">Selamat datang di halaman kelompok kami</p>
+    <p class="welcome">Selamat datang di halaman kelompok 7 kami</p>
 
     <div class="container">
         <?php foreach ($anggota as $a): ?>
