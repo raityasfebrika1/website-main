@@ -38,7 +38,7 @@ $anggota = [
 
 <body>
 
-    <h1>Kelompok 7 tes ci cd</h1>
+    <h1>Kelompok 7 tes ci cd ke 2</h1>
     <p class="welcome">Selamat datang di halaman kelompok 7 kami</p>
 
     <div class="container">
