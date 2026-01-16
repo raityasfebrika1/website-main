@@ -32,7 +32,7 @@ $anggota = [
 
 <head>
     <meta charset="UTF-8">
-    <title>Kelompok 7 plis TUHAN</title>
+    <title>Kelompok 7</title>
     <link rel="stylesheet" href="style_baru.css">
 </head>
 
