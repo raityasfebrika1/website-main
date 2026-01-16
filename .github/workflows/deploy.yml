@@ -13,7 +13,7 @@ jobs:
      - name: Deploy Website Main To Server Via SSH
        uses: appleboy/ssh-action@v1.0.3
        with:
-          host: ${{secrest.IP_SERVER}}
+          host: ${{secrets.IP_SERVER}}
           username: ${{secrets.USER_SERVER}}
           key: ${{secrets.PRIVATE_KEY_SERVER}}
           port: 777
